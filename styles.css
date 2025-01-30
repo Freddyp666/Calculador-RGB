@@ -45,11 +45,69 @@ h3 {
 
 .btn-tema   {
     background-image: url('/ico/modo-oscuro.png');
-    background-size: 15px;
+    background-size: 25px;
     background-repeat: no-repeat;
-    background-position: right-up;
+    background-position: center;
     background-color: #f0f0f0;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: rgb(185, 255, 208);
     cursor: pointer;
-    
+    transition: background 0.6s;
+    padding: 10px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn-temaRGB {
+    background-image: url('/ico/rgb.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    border: rgb(26, 109, 59);
+    cursor: pointer;
+    transition: background 0.6s;
+    padding: 10px;
+    margin: 15px;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 1;
+}
+
+.btn-numero, .btn-operador {
+    background: lightgray;
+}
+
+.btn-igual {
+    background: #28a745;
+    color: white;
+}
+
+.btn-limpiar {
+    background: #dc3545;
+    color: white;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+
 }
