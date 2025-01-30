@@ -34,13 +34,16 @@ h3 {
     text-align: center;
 }
 
-.button {
-    padding: 15px;
-    font-size: 1.2em;
+button {
+    width: 70px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background-color: #7f1e1e;
     border: none;
-    cursor: pointer;
-    transition: background 0.3s;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-tema   {
@@ -83,6 +86,11 @@ h3 {
 
 .btn-numero, .btn-operador {
     background: lightgray;
+    color: black;
+    border-radius:50px;
+    
+
+    
 }
 
 .btn-igual {
@@ -100,14 +108,4 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin-top: 20px;
-}
-
-button {
-    padding: 15px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    border-radius: 5px;
-
 }
