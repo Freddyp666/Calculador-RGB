@@ -14,6 +14,8 @@ h3 {
     margin-top: 20px;
     color: #666;
 }
+
+
 .pantalla {
     width: 90%;
     margin-bottom: 10px;
@@ -22,6 +24,7 @@ h3 {
     padding: 10px;
     border: none;
     background: #ddd;
+    border-radius: 10px;
 }
 
 .calculadora {
@@ -58,8 +61,8 @@ button {
     transition: background 0.6s;
     padding: 10px;
     margin: 10px;
-    width: 50px;
-    height: 50px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     top: 0;
     right: 0;
@@ -77,8 +80,8 @@ button {
     transition: background 0.6s;
     padding: 10px;
     margin: 15px;
-    width: 50px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     top: 0;
     right: 1;
@@ -86,21 +89,36 @@ button {
 
 .btn-numero, .btn-operador {
     background: lightgray;
-    color: black;
-    border-radius:50px;
-    
-
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
     
 }
 
 .btn-igual {
     background: #28a745;
     color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
 }
 
 .btn-limpiar {
     background: #dc3545;
     color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
 }
 
 .botones {

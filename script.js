@@ -1,14 +1,9 @@
-function cambiarRGB(){
-    let colorRamdom=`rgb($(Math.floor(Math.random()*256)), $(Math.floor(Math.random()*256)), $(Math.floor(Math.random()*256)))`;
-    document.body.style.backgroundColor=colorRamdom;
-}
-
 function cambiarTema(){
     let body=document.body;
     let calc=document.querySelector('.calculadora');
     if(body.style.backgroundColor=='white'){
-        body.style.backgroundColor='black';
-        calc.style.backgroundColor='black';
+        body.style.backgroundColor='#131010';
+        calc.style.backgroundColor='#1A1A19';
         calc.style.color='white';
 
     }else{
@@ -16,5 +11,33 @@ function cambiarTema(){
         calc.style.backgroundColor='white';
         calc.style.color='black';
     }
+
+}
+
+function cambiarRGB() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    
+    let colorRandom = `rgb(${r}, ${g}, ${b})`;
+    document.querySelector('.calculadora').style.backgroundColor = colorRandom;
+
+    // Calcular brillo basado en la luminosidad percibida
+    let luminancia = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    
+    // Determinar color de texto (negro o blanco)
+    let colorTexto = luminancia > 128 ? 'black' : 'white';
+    document.querySelector('.calculadora').style.color = colorTexto;
+}
+
+//Agregar Valores a la pantalla
+function agregarValorPantalla(valor){
+    let MostrarPantalla=document.getElementById("pantallaCal");
+    MostrarPantalla.valor+=valor;
+
+}
+
+//Funcion suma
+function suma(){
 
 }

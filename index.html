@@ -13,14 +13,14 @@
     <h1 class="title1">Calculado Básica</h1>
     <h3 class="title2">Por Fredy Pallo</h3>
     <input type="button"  class="btn-tema" title="Cambiar de tema" onclick="cambiarTema()">
-    <input type="button"  class="btn-temaRGB" title="Cambiar de tema" onclick="cambiarRGB()">
+    <input type="button"  class="btn-temaRGB" title="Cambiar de temaRGB" onclick="cambiarRGB()">
 
     <div class="calculadora">
-        <input type="text" class="pantalla" readonly title="Pantalla de la calculadora" placeholder="0">
+        <input type="text" class="pantalla" id="pantallaCal" readonly title="Pantalla de la calculadora" placeholder="0">
         <br>
         <div class="botones">
-        <input type="button" class="btn-numero" value="1">
-        <input type="button" class="btn-numero" value="2">
+        <input type="button" class="btn-numero" value="1" onclick="agregarValorPantalla('1')">
+        <input type="button" class="btn-numero" value="2" onclick="agregarValorPantalla('2')">
         <input type="button" class="btn-numero" value="3">
         <input type="button" class="btn-operador" value="+">
         <input type="button" class="btn-numero" value="4">
