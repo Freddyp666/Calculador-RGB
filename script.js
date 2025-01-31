@@ -32,8 +32,13 @@ function cambiarRGB() {
 
 //Agregar Valores a la pantalla
 function agregarValorPantalla(valor){
-    let MostrarPantalla=document.getElementById("pantallaCal");
-    MostrarPantalla.valor+=valor;
+    let mostrarPantalla=document.getElementById("pantallaCal");
+    if(mostrarPantalla){
+        mostrarPantalla.value+=valor;
+    }else{
+        console.error("No valor")
+    }
+    
 
 }
 
