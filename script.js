@@ -43,7 +43,15 @@ function agregarValorPantalla(valor){
 }
 
 //Funcion suma
-function suma(){
+function limpiarPantalla(){
+    let borrar=document.getElementById("pantallaCal");
+    borrar.value='';
+}
+ 
+function calcularResultado(){
+    const valorPantalla=document.getElementById('pantallaCal').value;
+    const resultado=eval(valorPantalla)
+    document.getElementById('pantallaCal').value=resultado;
+
 
 }
-

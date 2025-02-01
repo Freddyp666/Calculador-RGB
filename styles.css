@@ -1,20 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-
 }
 
 h1 {
     text-align: center;
     margin-top: 50px;
 }
-h3 {
 
+h3 {
     text-align: center;
     margin-top: 20px;
     color: #666;
 }
-
 
 .pantalla {
     width: 90%;
@@ -49,8 +47,8 @@ button {
     cursor: pointer;
 }
 
-.btn-tema   {
-    background-image: url('/ico/modo-oscuro.png');
+.btn-tema {
+    background-image: url("/ico/modo-oscuro.png");
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +67,7 @@ button {
 }
 
 .btn-temaRGB {
-    background-image: url('/ico/rgb.png');
+    background-image: url("/ico/rgb.png");
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,7 +85,8 @@ button {
     right: 1;
 }
 
-.btn-numero, .btn-operador {
+.btn-numero,
+.btn-operador {
     background: lightgray;
     width: 50px;
     height: 50px;
@@ -96,8 +95,6 @@ button {
     border-radius: 50px;
     border: none;
     cursor: pointer;
-    
-    
 }
 
 .btn-igual {
@@ -131,10 +128,9 @@ button {
 
 input[type="button"]:hover {
     background-color: #f3aaaa;
-  }
+}
 
-
-a{
+a {
     position: relative;
     width: 100px;
     height: 50px;
@@ -145,55 +141,73 @@ a{
     letter-spacing: 4px;
     text-decoration: none;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-
 }
 
-a::before{
-    content: '';
+a::before {
+    content: "";
     position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-       background: linear-gradient(45deg, #fb0094, #00f, #0f0, #f00, #fb0094, #00f, #0f0, #f00);
-       background-size: 400%;
-       opacity: 0;
-       filter: blur(20px);
-       transition: 0.5s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            #fb0094,
+            #00f,
+            #0f0,
+            #f00,
+            #fb0094,
+            #00f,
+            #0f0,
+            #f00);
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition: 0.5s;
 }
 
-a::after{
-    content: '';
+a::after {
+    content: "";
     position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-       background: linear-gradient(45deg, #fb0094, #00f, #0f0, #f00, #fb0094, #00f, #0f0, #f00);
-       background-size: 400%;
-       opacity: 0;
-       filter: blur(20px);
-       transition: 0.5s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            #fb0094,
+            #00f,
+            #0f0,
+            #f00,
+            #fb0094,
+            #00f,
+            #0f0,
+            #f00);
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition: 0.5s;
 }
 
 a:hover::before,
-a:hover::after{
-opacity:1;
-animation: animate 20s linear Infinity
+a:hover::after {
+    opacity: 1;
+    animation: animate 20s linear Infinity;
 }
-@keyframes animate{
-    0%{
+
+@keyframes animate {
+    0% {
         background-position: 0 0;
     }
-    50%{
+
+    50% {
         background-position: 300% 0;
     }
-    100%{
+
+    100% {
         background-position: 0 0;
     }
 }
 
-a span{
+a span {
     position: relative;
     display: block;
     top: 1px;
@@ -202,25 +216,21 @@ a span{
     bottom: 1px;
     text-align: center;
     background: #0c0c0c;
-    color:rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
     transition: 0.5s;
     z-index: 1;
 }
 
-a:hover span{
+a:hover span {
     color: rgba(255, 255, 255, 1);
+}
 
-}   
-
-a span::before{
-    content: '';
+a span::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 50%;
     background: rgba(6, 9, 86, 0.1);
-
 }
-
-
